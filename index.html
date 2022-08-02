@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon_io/favicon.ico">
+    <title>ToDo App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Todo App</h2>
+        <span class="cur-date"></span>
+        <div class="input-field">
+            <input type="text" placeholder="add your new todo">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="todo-list">
+            <!--Data from local storage-->
+        </ul>
+        <div class="footer">
+            <span class="task-count"></span>
+            <button class="clear-all">Clear All</button>
+        </div>
+    </div> 
+    <script src="script.js"></script>   
+</body>
+</html>

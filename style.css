@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: salmon;
+}
+
+.wrapper {
+    width: 33%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 35px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper h2 {
+    font-size: 22px;
+    font-weight: 500;
+    display: inline;
+}
+
+.wrapper .cur-date {
+    float: right;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wrapper .input-field {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-field input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 90%;
+}
+
+.input-field button {
+    width: 10%;
+    background: salmon;
+    color: white;
+    border: none;
+    margin-left: 2px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input-field button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .todo-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todo-list li {
+    list-style: none;
+    padding: 5px 2px;
+    background: #f2f2f2;
+    line-height: 40px;
+    margin-bottom: 8px;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todo-list li span {
+    position: absolute;
+    right: -45px;
+    background: salmon;
+    color: white;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.todo-list li:hover span {
+    right: 0px;
+}
+
+.wrapper .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    line-height: 40px;
+}
+
+.footer button {
+    width: 25%;
+    background: salmon;
+    color: white;
+    border: none;
+    margin-left: 2px;
+    cursor: pointer;
+    padding: 2px 8px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media only screen and (max-width: 560px) {
+    body {
+        height: auto;
+        background: #fff;
+    }
+    .wrapper {
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px 35px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .wrapper .todo-list {
+        max-height: 250px;
+        overflow-y: auto;
+    }
+    
+    .todo-list li {
+        list-style: none;
+        padding: 5px 2px;
+        background: #f2f2f2;
+        line-height: 40px;
+        margin-bottom: 8px;
+        position: relative;
+        cursor: default;
+        overflow: hidden;
+    }
+
+    .todo-list li span {
+        position: absolute;
+        right: -45px;
+        background: salmon;
+        color: white;
+        width: 10%;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .todo-list li:hover span {
+        right: 0px;
+    }
+}
+
